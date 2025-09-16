@@ -1,0 +1,77 @@
+/* .scroll-container {
+  height: 100vh;
+  width: 50wv;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.accordion-panel {
+  height: 100vh;
+  width: 50vw;
+  scroll-snap-align: start;
+  transition: transform 0.6s ease-in-out;
+} */
+/* .container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  background: lightblue;
+  border-bottom: 2px solid #000;
+}
+section:nth-child(2n) {
+  background: lightcoral;
+} */
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+
+  /* position: s; */
+}
+
+.scrole {
+  margin: 0;
+  padding: 0;
+  height: 100vh; /* thoda margin ke liye */
+  width: 100vw;
+  /* overflow-y: scroll; */
+  overflow-x: hidden;
+  scroll-snap-type: y proximity;
+  background: transparent;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.scrole::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera ke liye */
+}
+section {
+  height: 90vh; /* box ki height */
+  width: 90vw; /* box ki width */
+  scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* border-bottom: 2px solid transparent; */
+}
+
+section:nth-child(2n) {
+  background: transparent;
+}
+section:nth-child(2n + 1) {
+  background: transparent;
+}
+.spinner-grow {
+  color: #0d6efd !important; /* primary blue, override default animation */
+}

@@ -1,0 +1,86 @@
+.timeline-container {
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #e0e0e0;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.timeline-dot {
+  width: 14px;
+  height: 14px;
+  background: white;
+  border: 3px solid #0d6efd; /* Bootstrap primary */
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.academic-card {
+  position: relative;
+  margin-bottom: 2rem;
+  z-index: 3;
+}
+
+@media (max-width: 767px) {
+  /* Mobile: cards full width in single column */
+  .timeline-line {
+    left: 20px;
+  }
+  .timeline-item {
+    margin-left: 40px;
+  }
+}
+.academic-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 50%;
+  background: #f8f9fa;
+  padding: 4px;
+}
+.blink svg {
+  transition: transform 0.3s ease, fill 0.3s ease;
+  border-radius: 200px;
+}
+
+.blink:hover svg {
+  transform: scale(1.2); /* thoda bada ho jayega */
+  fill: #9cccdfff; /* LinkedIn blue color */
+  background-color: black;
+  border-radius: 200px;
+}
+
+.blink:hover .bi-github {
+  fill: #9cccdfff; /* GitHub ka dark grey */
+  background-color: black;
+  border-radius: 200px;
+}
+
+.custom-btn {
+  border-radius: 100px;
+  border: 5px solid #272829ff;
+  color: #292727;
+  font-weight: 600;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  border-color: #333;
+}
+
+.custom-btn:hover {
+  background-color: #272829ff; /* background fill ho jayega */
+  color: #9cccdfff; /* text white ho jayega */
+  transform: scale(1.05); /* thoda zoom effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border-color: #9cccdfff;
+}
+html,
+body {
+  overflow-x: hidden;
+}
