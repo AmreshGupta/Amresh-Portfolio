@@ -64,7 +64,7 @@ function Project4() {
                 <div className="container d-flex justify-content-between align-items-center ">
                   <a
                     style={{ color: "black" }}
-                    href="https://github.com/AmreshGupta/TextUtils"
+                    href="https://github.com/AmreshGupta/Amresh-Portfolio"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ function Project4() {
                   </a>
                   <a
                     style={{ color: "black", fontWeight: "bolder" }}
-                    href="https://textutils-5me7.onrender.com/"
+                    href="https://amresh-portfolio.onrender.com"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
